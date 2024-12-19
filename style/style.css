@@ -1,0 +1,69 @@
+body{
+  background-image: linear-gradient(to bottom, #ffffff, #e3e9fa, #bad6f4, #84c6ea, #2eb7d7) !important;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.enketo-power {
+  display: none !important;
+}
+.form-header__branding img {
+  display: none !important;
+}
+.form-header__branding {
+  width: 150px !important;
+  height: 50px !important;
+  background-image: url('../images/logo-horizontal.svg') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.next-page {
+  background-color: #0378a4 !important;
+  border-color: #0378a4 !important;
+  border-radius: 6px !important;
+}
+
+#form-title {
+  color:#0378a4 !important;
+}
+h4 {
+  color: #0378a4 !important;
+}
+.or-group:not(.or-appearance-no-collapse).or-appearance-compact > h4::before {
+  border-left: 12px solid #0378a4 !important;
+}
+.or-group:not(.or-appearance-no-collapse) > h4::before {
+  border-top: 12px solid #0378a4;
+  border-left: 12px solid transparent !important;
+}
+
+.question .question-label {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+.previous-page {
+  background: #0378a4 !important;
+  color: white !important;
+  width: 70px !important;
+  padding-bottom: 6px !important;
+  padding-top: 6px !important;
+  border-radius: 6px !important;
+}
+.form-footer__content__jump-nav {
+  display: none;
+}
+.form-header__button--print.btn-bg-icon-only {
+  display: none;
+}
+
+button.form-header__button--homescreen.btn-icon-only {
+  display: none;
+}
+/* 
+.pages-toc {
+  display: none;
+} */
