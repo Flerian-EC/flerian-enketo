@@ -84,6 +84,7 @@ button.form-header__button--homescreen.btn-icon-only {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
+  text-align: center;
 }
 
 

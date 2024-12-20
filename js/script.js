@@ -4,7 +4,7 @@
   if (headerElement) {
     const newDiv = document.createElement('div');
     
-    newDiv.textContent = "Reportar un problema"; // Texto dentro del div
+    newDiv.textContent = "¿Necesitas Ayuda?"; // Texto dentro del div
     newDiv.className = "nuevo-div"; // Clase CSS para el nuevo div
     newDiv.id = "boton-problema";
     
