@@ -150,3 +150,33 @@ button.form-header__button--homescreen.btn-icon-only {
 .modal-cerrar:hover {
   background-color: #026b87; /* Azul más oscuro al pasar el mouse */
 }
+
+
+@media (max-width: 1100px) {
+  .nuevo-div {
+    right: 60px;
+  }
+}
+@media (max-width: 690px) {
+  #modal-problema {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .form-header {
+    margin-bottom: 50px;
+  }
+  .nuevo-div {
+        right: 50%;
+        top: 120%;
+        transform: translateY(0) translateX(50%);
+  }
+}
+@media (max-width: 425px) {
+  #modal-problema {
+    width: 300px;
+  }
+  .nuevo-div {
+    width: 200px;
+  }
+}

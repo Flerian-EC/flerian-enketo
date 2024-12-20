@@ -31,8 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
       <strong>inmediatamente</strong> para evitar que se perjudique su matriculación:
     </p>
     <ul class="modal-lista">
-      <li>📞 123-456-789</li>
-      <li>📞 987-654-321</li>
+      <li>📞 67157385</li>
+      <li>📞 78802660</li>
+      <li>📞 74039410</li>
+      <li>📞 69877418</li>
+      <li>📞 77782493</li>
     </ul>
     <button id="cerrar-modal" class="modal-cerrar">Cerrar</button>
   </div>
