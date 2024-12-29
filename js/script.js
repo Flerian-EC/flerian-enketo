@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <strong>inmediatamente</strong> para evitar que se perjudique su matriculación:
     </p>
     <ul class="modal-lista">
+      <li>📞 69877418</li>
+      <li>📞 74039410</li>
       <li>📞 67157385</li>
       <li>📞 78802660</li>
-      <li>📞 74039410</li>
-      <li>📞 69877418</li>
       <li>📞 77782493</li>
     </ul>
     <button id="cerrar-modal" class="modal-cerrar">Cerrar</button>
@@ -74,7 +74,7 @@ const articleElement = document.querySelector('article.paper');
 const newLink = document.createElement('a');
 
 // Configura las propiedades del enlace
-newLink.href = 'http://www.google.com';
+newLink.href = 'https://data.umsa.bo/';
 newLink.textContent = 'Descubre Data Umsa';
 newLink.target = '_blank';
 newLink.className = "data-umsa-link";

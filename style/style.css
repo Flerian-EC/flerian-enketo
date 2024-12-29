@@ -25,7 +25,7 @@ background-size: cover;
   background-color: #0378a4 !important;
   border-color: #0378a4 !important;
   border-radius: 6px !important;
-  margin-bottom: 50px !important;
+  margin-bottom: 70px !important;
 }
 
 #form-title {
@@ -87,6 +87,7 @@ button.form-header__button--homescreen.btn-icon-only {
   font-weight: 600;
   cursor: pointer;
   text-align: center;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -104,6 +105,9 @@ button.form-header__button--homescreen.btn-icon-only {
   box-shadow: -4px 4px 9px 0px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   display: none;
+}
+.modal-mensaje {
+  text-align: left;
 }
 
 /* modal contenido */
@@ -156,11 +160,21 @@ button.form-header__button--homescreen.btn-icon-only {
 
 .data-umsa-link {
   position: absolute;
-  bottom: 0;
-  right: 0;
   font-weight: bold;
-  text-decoration: underline;
-  color: #0378a4;
+  text-decoration: none;
+  padding: 6px 3px;
+  color: white !important;
+  display: block;
+  right: 50%;
+  bottom: 5px;
+  border-radius: 6px;
+  transform: translateX(50%);
+  width: 180px;
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  line-height: 42px;
+  text-align: center;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
 }
 
 
