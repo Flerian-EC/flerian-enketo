@@ -1,23 +1,27 @@
 (() => {
-  const headerElement = document.querySelector('header.form-header');
+
+
+//agregar el boton "¿Necesitas Ayuda?"
+  document.addEventListener("DOMContentLoaded", () => {
+    const headerElement = document.querySelector('header.form-header');
   
-  if (headerElement) {
-    const newDiv = document.createElement('div');
-    
-    newDiv.textContent = "¿Necesitas Ayuda?"; // Texto dentro del div
-    newDiv.className = "nuevo-div"; // Clase CSS para el nuevo div
-    newDiv.id = "boton-problema";
-    
-    headerElement.appendChild(newDiv);
-  } else {
-    console.error("El elemento 'header.form-header' no se encontró en el DOM.");
-  }
+    if (headerElement) {
+      const newDiv = document.createElement('div');
+      
+      newDiv.textContent = "¿Necesitas Ayuda?"; // Texto dentro del div
+      newDiv.className = "nuevo-div"; // Clase CSS para el nuevo div
+      newDiv.id = "boton-problema";
+      
+      headerElement.appendChild(newDiv);
+    } else {
+      console.error("El elemento 'header.form-header' no se encontró en el DOM.");
+    }
+  });
   
 
 
 
 // Desarrollo del modal:
-  // Esperar a que el DOM esté cargado
 document.addEventListener("DOMContentLoaded", () => {
   // Crear el modal
   const modal = document.createElement("div");
@@ -60,5 +64,68 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+//agregar el boton 'Descubre Data Umsa'
+document.addEventListener("DOMContentLoaded", () => {
+// Selecciona el elemento "article" con la clase "paper"
+const articleElement = document.querySelector('article.paper');
+
+// Crea un nuevo elemento <a>
+const newLink = document.createElement('a');
+
+// Configura las propiedades del enlace
+newLink.href = 'http://www.google.com';
+newLink.textContent = 'Descubre Data Umsa';
+newLink.target = '_blank';
+newLink.className = "data-umsa-link";
+
+// Añade el enlace al final del elemento "article"
+articleElement.appendChild(newLink);
+
+
+
+//==================================
+//comportamiento del boton
+const botonAnt = document.querySelector("a.previous-page");
+
+
+// Crea una instancia de MutationObserver
+const observerSig = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    if (mutation.attributeName === 'class') {
+      // Verifica si la clase "disabled" fue eliminada
+      if (!(botonAnt.classList.contains('disabled'))) {
+        // Llama a tu función aquí
+        newLink.style.display = "none";
+      }
+    }
+  });
+});
+
+// Configura el observador para observar cambios en los atributos del elemento
+observerSig.observe(botonAnt, { attributes: true });
+
+
+
+// Crea una instancia de MutationObserver
+const observer = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    if (mutation.attributeName === 'class') {
+      // Verifica si la clase "disabled" fue agregada
+      if (botonAnt.classList.contains('disabled')) {
+        // Llama a tu función aquí
+        newLink.style.display = "block";
+      }
+    }
+  });
+});
+
+// Configura el observador para observar cambios en los atributos del elemento
+observer.observe(botonAnt, { attributes: true });
+
+
+
+
+});
   
   })();
