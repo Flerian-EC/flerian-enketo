@@ -128,6 +128,11 @@ observer.observe(botonAnt, { attributes: true });
 
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const EL_LOGO = document.querySelector(".form-header__branding");
+  EL_LOGO.setAttribute("style", "background-image: url('/images/logo-horizontal.svg') !important;");
+});
+
 console.log("equipo Data-Umsa:");
 console.log("Fabian, Andres, Ricardo, Raquel, Jhoseline");
   })();

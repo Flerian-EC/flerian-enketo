@@ -15,7 +15,7 @@ background-size: cover;
 .form-header__branding {
   width: 150px !important;
   height: 50px !important;
-  background-image: url('../images/logo-horizontal.svg') !important;
+/*   background-image: url('/images/logo-horizontal.svg') !important; */
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
@@ -55,9 +55,9 @@ h4 {
   padding-top: 6px !important;
   border-radius: 6px !important;
 }
-.form-footer__content__jump-nav {
+/* .form-footer__content__jump-nav {
   display: none;
-}
+} */
 .form-header__button--print.btn-bg-icon-only {
   display: none;
 }
@@ -166,7 +166,7 @@ button.form-header__button--homescreen.btn-icon-only {
   color: white !important;
   display: block;
   right: 50%;
-  bottom: 5px;
+  bottom: 50px;
   border-radius: 6px;
   transform: translateX(50%);
   width: 180px;

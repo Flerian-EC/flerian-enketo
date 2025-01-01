@@ -1,9 +1,6 @@
 {
   "name": "flerian-enketo",
   "version": "1.0.0",
-  "browserslist": [
-    "defaults and supports es6-module"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf ./dist && parcel build src/script.js src/style.css --no-source-maps"
@@ -14,5 +11,15 @@
   "devDependencies": {
     "parcel": "^2.13.3",
     "svgo": "^3.3.2"
+  },
+  "targets": {
+    "default": {
+      "context": "browser",
+      "engines": {
+        "browsers": ["last 2 versions", "not dead", "not IE 11"]
+      },
+      "outputFormat": "esmodule",
+      "distDir": "./dist"
+    }
   }
 }
