@@ -25,7 +25,7 @@ background-size: cover;
   background-color: #0378a4 !important;
   border-color: #0378a4 !important;
   border-radius: 6px !important;
-  margin-bottom: 70px !important;
+/*   margin-bottom: 70px !important; */
 }
 
 #form-title {
@@ -102,9 +102,10 @@ button.form-header__button--homescreen.btn-icon-only {
   z-index:1000;
   background-color: white;
   padding: 20px 40px;
+  padding-bottom: 90px;
   box-shadow: -4px 4px 9px 0px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  display: none;
+  display: block;
 }
 .modal-mensaje {
   text-align: left;
@@ -150,8 +151,12 @@ button.form-header__button--homescreen.btn-icon-only {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
   transition: background-color 0.3s ease;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
 }
 
 .modal-cerrar:hover {
@@ -175,6 +180,20 @@ button.form-header__button--homescreen.btn-icon-only {
   line-height: 42px;
   text-align: center;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido .data-umsa-link {
+  bottom: 19px;
+}
+
+#modal-fondo {
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: #00000090;
 }
 
 

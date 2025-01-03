@@ -25,9 +25,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Crear el modal
   const modal = document.createElement("div");
-  modal.id = "modal-problema";
+  modal.id = "modal-fondo";
 
   modal.innerHTML = `
+  <div id="modal-problema">
   <div class="modal-contenido">
     <h2 class="modal-titulo">¡Atención urgente!</h2>
     <p class="modal-mensaje">
@@ -35,13 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
       <strong>inmediatamente</strong> para evitar que se perjudique su matriculación:
     </p>
     <ul class="modal-lista">
-      <li>📞 69877418</li>
-      <li>📞 74039410</li>
+      <li>📞 75130638</li>
+      <li>📞 78050712</li>
       <li>📞 67157385</li>
       <li>📞 78802660</li>
       <li>📞 77782493</li>
     </ul>
     <button id="cerrar-modal" class="modal-cerrar">Cerrar</button>
+  </div>
   </div>
   `;
 
@@ -67,26 +69,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //agregar el boton 'Descubre Data Umsa'
 document.addEventListener("DOMContentLoaded", () => {
-// Selecciona el elemento "article" con la clase "paper"
+// Selecciona el elemento "article" con la clase "paper" y el modal problema
 const articleElement = document.querySelector('article.paper');
+const MODAL = document.querySelector(".modal-contenido");
 
 // Crea un nuevo elemento <a>
 const newLink = document.createElement('a');
 
 // Configura las propiedades del enlace
 newLink.href = 'https://data.umsa.bo/';
-newLink.textContent = 'Descubre Data Umsa';
+newLink.textContent = 'Mas Informacion'; //Descubre Data Umsa
 newLink.target = '_blank';
 newLink.className = "data-umsa-link";
 
 // Añade el enlace al final del elemento "article"
-articleElement.appendChild(newLink);
+MODAL.appendChild(newLink);
+//articleElement.appendChild(newLink);
 
 
 
 //==================================
 //comportamiento del boton
-const botonAnt = document.querySelector("a.previous-page");
+
+
+
+/* const botonAnt = document.querySelector("a.previous-page");
 
 
 // Crea una instancia de MutationObserver
@@ -121,7 +128,7 @@ const observer = new MutationObserver(mutations => {
 });
 
 // Configura el observador para observar cambios en los atributos del elemento
-observer.observe(botonAnt, { attributes: true });
+observer.observe(botonAnt, { attributes: true }); */
 
 
 
